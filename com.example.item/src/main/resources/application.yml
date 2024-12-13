@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: item-service
+server:
+  port: 0
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:19090/eureka/
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /docs
+    url: /springdoc/openapi3-item-service.json
+    operations-sorter: alpha
+    tags-sorter: alpha
+  api-docs:
+    enabled: true
+    path: /api-docs-item-service

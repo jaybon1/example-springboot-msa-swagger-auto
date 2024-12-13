@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: user-service
+server:
+  port: 19100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:19090/eureka/
+
+#springdoc:
+#  swagger-ui:
+#    enabled: true
+#    path: /docs
+#    url: /springdoc/openapi3-user-service.json
+#    operations-sorter: alpha
+#    tags-sorter: alpha
+#  api-docs:
+#    enabled: true
+#    path: /api-docs-user-service
